@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(65, 63, 63);
+    font-family: 'Poppins', sans-serif;
+}
+
+div {
+    position: relative;
+}
+
+#rangeValue {
+    position: absolute;
+    top: 2px;
+    right: -60px;
+    padding: 2px;
+    width: 50px;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+}
+
+#rangeValue::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+}
+
+.range {
+    width: 400px;
+    height: 2px;
+    background: #111;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 2px;
+}
